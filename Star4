@@ -1,0 +1,20 @@
+package Locator;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ByAttribut {
+public static void main(String[] args) throws InterruptedException
+{
+	System.setProperty("Webdriver.Chrome.driver", "C:\\Esential Software\\chromedriver_win32\\chromedriver.exe");
+	
+	WebDriver driver=new ChromeDriver();
+	driver.get("https://www.kesari.in/login");
+	
+	Thread.sleep(1000);
+	
+	driver.findElement(By.tagName("input")).sendKeys("ABXC");
+	
+}
+}
